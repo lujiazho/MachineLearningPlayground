@@ -2,8 +2,8 @@
 Implementation of basic mathematical pattern recognition/machine learning techniques for fun
 
 **Tutorials**
-- :star: [Support Vector Classifier (SVC)]()
-- :smiley: [Support Vector Regressor (SVR)]()
+- :star: [Support Vector Classifier (SVC)](Tutorials/SVC.ipynb)
+- :smiley: [Support Vector Regressor (SVR)](Tutorials/SVR.ipynb)
 - :1234: [Ridge Regression]()
 - :mortar_board: [Nearest Mean]()
 - :closed_book: [KMeans]()
@@ -13,7 +13,11 @@ Implementation of basic mathematical pattern recognition/machine learning techni
 - :mahjong: [Density Estimation]()
 
 **Math Derivation**
+- :star: [Support Vector Classifier (SVC)](Math_Derivation/SVC.pdf)
+- :smiley: [Support Vector Regressor (SVR)](Math_Derivation/SVR.pdf)
 
+**ML Playground**
+- :surfer: [Digit Recognizer]()
 - :busts_in_silhouette: []()
 - :bar_chart: []()
 - :snake: []()
@@ -21,6 +25,3 @@ Implementation of basic mathematical pattern recognition/machine learning techni
 - :pencil2: []()
 - :bulb: []()
 - :mega: []()
-
-**ML Playground**
-- :surfer: [Digit Recognizer](docs/SLAM.md)
