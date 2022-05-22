@@ -11,7 +11,9 @@ Implementation of basic mathematical pattern recognition/machine learning techni
 - [ ] :eyes: [Perceptron Learning]()
 - [ ] :camera: [MSE techniques (classification&Regression)]()
 - [ ] :mahjong: [Density Estimation (Non-parametric)]()
-- [ ] :busts_in_silhouette: []()
+- [ ] :busts_in_silhouette: [Density Estimation (parametric)]()
+- [ ] :bar_chart: [ANN]()
+- [ ] :snake: [Dimension Reduction]()
 
 **Math Derivation**
 - [x] :star: [Support Vector Classifier (SVC)](Math_Derivation/SVC.pdf)
@@ -19,8 +21,6 @@ Implementation of basic mathematical pattern recognition/machine learning techni
 
 **ML Playground**
 - [ ] :surfer: [Digit Recognizer]()
-- [ ] :bar_chart: []()
-- [ ] :snake: []()
 - [ ] :fireworks: []()
 - [ ] :pencil2: []()
 - [ ] :bulb: []()
