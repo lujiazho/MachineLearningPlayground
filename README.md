@@ -1,6 +1,9 @@
 # MachineLearningPlayground
 Implementation of basic mathematical pattern recognition/machine learning techniques for fun
 
+**Version**
+ - Numpy: 1.21.1
+
 **Tutorials**
 - [x] :star: [Support Vector Classifier (SVC)](Tutorials/SVC.ipynb)
 - [x] :smiley: [Support Vector Regressor (SVR)](Tutorials/SVR.ipynb)
