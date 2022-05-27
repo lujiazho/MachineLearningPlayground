@@ -1,8 +1,16 @@
 # MachineLearningPlayground
 Implementation of basic mathematical pattern recognition/machine learning techniques for fun
 
-**Version**
- - Numpy: 1.21.1
+**Setup**
+- Download with pip
+```Prompt
+pip install MLplayground
+```
+
+- Download with git
+```Prompt
+git clone https://github.com/lujiazho/MachineLearningPlayground.git
+```
 
 **Tutorials**
 - [x] :star: [Support Vector Classifier (SVC)](Tutorials/SVC.ipynb)
