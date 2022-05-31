@@ -35,6 +35,7 @@ git clone https://github.com/lujiazho/MachineLearningPlayground.git
 - [x] :eyes: [Perceptron Learning](Math_Derivation/Perceptron_Learning_n_Gradient_Descent.pdf)
 - [x] :camera: [MSE techniques (classification&Regression)](Math_Derivation/MSE_techniques.pdf)
 - [x] :mahjong: [Density Estimation](Math_Derivation/Density_Estimation.pdf)
+- [x] :bar_chart: [ANN](Math_Derivation/ANN.pdf)
 - [x] :snake: [PCA](Math_Derivation/Feature_Reduction.pdf)
 
 **ML Playground**
