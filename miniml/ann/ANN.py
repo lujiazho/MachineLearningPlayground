@@ -43,7 +43,12 @@ class ANN:
             self.linear.append(Linear(pre, self.W_node[i], self.b_node[i]))
             if i == len(self.hidden_layer)-1 and self.model == 'regressor':
                 break
-            self.activation.append(Sigmoid(self.linear[-1]) if self.activation_func == 'Sigmoid' else Relu(self.linear[-1]))
+            if self.activation_func == 'Sigmoid':
+                self.activation.append(Sigmoid(self.linear[-1]))
+            elif self.activation_func == 'Relu':
+                self.activation.append(Relu(self.linear[-1]))
+            elif self.activation_func == 'Tanh':
+                self.activation.append(Tanh(self.linear[-1]))
             pre = self.activation[-1]
         self.cost = MSE(self.y_node, self.activation[-1] if self.model=='classifier' else self.linear[-1])
     
@@ -78,10 +83,7 @@ class ANN:
 
         # for Adam
         it = 0
-        beta1, beta2 = 0.9, 0.999
-        epsilon = 1e-8
         
-
         for i in range(1, epochs+1):
             loss = 0
             index = list(range(len(self.x_val)))
@@ -105,28 +107,7 @@ class ANN:
 
                 # Step 4.4: optimization
                 for t in self.trainables:
-                    if self.optimizer == 'SGD':
-                        t.value -= lr * t.gradients[t]
-                    elif self.optimizer == 'Adam':
-                        t.mt[t] = beta1*t.mt[t] + (1-beta1)*t.gradients[t]
-                        mt_hat = t.mt[t]/(1-beta1**it)
-                        t.vt[t] = beta2*t.vt[t] + (1-beta2)*t.gradients[t]**2
-                        vt_hat = t.vt[t]/(1-beta2**it)
-                        t.value -= lr * mt_hat / (epsilon + vt_hat**0.5)
-                    elif self.optimizer == 'RAdam':
-                        ro_inf = 2/(1-beta2) - 1
-                        ro_t = ro_inf - 2*it*beta2**it/(1-beta2**it)
-
-                        t.mt[t] = beta1*t.mt[t] + (1-beta1)*t.gradients[t]
-                        mt_hat = t.mt[t]/(1-beta1**it)
-                        if ro_t <= 4:
-                            t.value -= lr * mt_hat
-                        else:
-                            r_t = np.sqrt((ro_t-4)*(ro_t-2)*ro_inf/((ro_inf-4)*(ro_inf-2)*ro_t))                            
-                            t.vt[t] = beta2*t.vt[t] + (1-beta2)*t.gradients[t]**2
-                            vt_hat = t.vt[t]/(1-beta2**it)
-
-                            t.value -= lr * mt_hat * r_t / (epsilon + vt_hat**0.5)
+                    t.optimize(optimizer=optimizer, lr=lr, it=it)
 
                 # Step 5: update current loss
                 loss += self.sorted_graph[-1].value
