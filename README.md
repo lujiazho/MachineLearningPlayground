@@ -40,6 +40,6 @@ git clone https://github.com/lujiazho/MachineLearningPlayground.git
 **ML Playground**
 - [x] :surfer: [Digit Recognizer](Tutorials/_Project_1_digit_recognizer.ipynb)
 - [x] :fireworks: [Auto Encoder](Tutorials/_Project_2_auto_encoder.ipynb)
-- [ ] :pencil2: []()
+- [x] :pencil2: [Neural Network Language Model (NNLM)](Tutorials/_Project_3_NNLanguageModel.ipynb)
 - [ ] :bulb: []()
 - [ ] :mega: []()
