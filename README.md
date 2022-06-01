@@ -42,5 +42,5 @@ git clone https://github.com/lujiazho/MachineLearningPlayground.git
 - [x] :surfer: [Digit Recognizer](Tutorials/_Project_1_digit_recognizer.ipynb)
 - [x] :fireworks: [Auto Encoder](Tutorials/_Project_2_auto_encoder.ipynb)
 - [x] :pencil2: [Neural Network Language Model (NNLM)](Tutorials/_Project_3_NNLanguageModel.ipynb)
-- [ ] :bulb: []()
+- [x] :bulb: [Word2Vec (Skip-gram)](Tutorials/_Project_4_Word2Vec(Skip-gram).ipynb)
 - [ ] :mega: []()
