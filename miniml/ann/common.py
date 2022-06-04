@@ -86,7 +86,7 @@ class Add(Node):
 
     def backward(self):
         # create zero loss for all inputs
-        self.gradients = {n: np.zeros_like(n.value) for n in self.inputs}
+        self.gradients = {n: np.zeros_like(n.value, dtype=np.float64) for n in self.inputs}
 
         for n in self.outputs:
             # Get the cost w.r.t this node.
@@ -112,7 +112,7 @@ class Linear(Node):
         
     def backward(self):
         # create zero loss for all inputs
-        self.gradients = {n: np.zeros_like(n.value) for n in self.inputs}
+        self.gradients = {n: np.zeros_like(n.value, dtype=np.float64) for n in self.inputs}
 
         for n in self.outputs:
             # Get the cost w.r.t this node.
@@ -157,7 +157,10 @@ class Sigmoid(Node):
         Node.__init__(self, [node])
 
     def _sigmoid(self, x):
-        return 1./(1 + np.exp(-1 * x))
+        res = np.copy(x)
+        res[x>0] = 1./(1 + np.exp(-(x[x>0])))
+        res[x<0] = np.exp(x[x<0]) / (1.0 + np.exp(x[x<0]))
+        return res
 
     def forward(self):
         self.x = self.inputs[0].value
@@ -165,7 +168,7 @@ class Sigmoid(Node):
 
     def backward(self):
         self.partial = self._sigmoid(self.x) * (1 - self._sigmoid(self.x))
-        self.gradients = {n: np.zeros_like(n.value) for n in self.inputs}
+        self.gradients = {n: np.zeros_like(n.value, dtype=np.float64) for n in self.inputs}
 
         for n in self.outputs:
             grad_cost = n.gradients[self]
@@ -191,7 +194,7 @@ class Relu(Node):
         self.value = self._relu(self.x)
 
     def backward(self):
-        self.gradients = {n: np.zeros_like(n.value) for n in self.inputs}
+        self.gradients = {n: np.zeros_like(n.value, dtype=np.float64) for n in self.inputs}
 
         for n in self.outputs:
             grad_cost = n.gradients[self]
@@ -212,7 +215,7 @@ class Tanh(Node):
 
     def backward(self):
         self.partial = (1 - self._tanh(self.x)**2)
-        self.gradients = {n: np.zeros_like(n.value) for n in self.inputs}
+        self.gradients = {n: np.zeros_like(n.value, dtype=np.float64) for n in self.inputs}
 
         for n in self.outputs:
             grad_cost = n.gradients[self]
