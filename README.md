@@ -12,31 +12,32 @@ pip install MLplayground
 git clone https://github.com/lujiazho/MachineLearningPlayground.git
 ```
 
-**Tutorials**
-- [x] :star: [Support Vector Classifier (SVC)](Tutorials/SVC.ipynb)
-- [x] :smiley: [Support Vector Regressor (SVR)](Tutorials/SVR.ipynb)
-- [x] :1234: [Ridge Regression](Tutorials/Ridge.ipynb)
-- [x] :mortar_board: [Nearest Mean](Tutorials/NearestMean.ipynb)
-- [x] :closed_book: [K-Means](Tutorials/KMeans.ipynb)
-- [x] :green_book: [K-Nearest Neighbors (KNN)](Tutorials/KNN.ipynb)
-- [x] :eyes: [Perceptron Learning](Tutorials/Perceptron.ipynb)
-- [x] :camera: [MSE techniques (classification&Regression)](Tutorials/MSE.ipynb)
-- [x] :mahjong: [Density Estimation (Non-parametric)](Tutorials/DenEstimate_NP.ipynb)
-- [x] :busts_in_silhouette: [Density Estimation (parametric)](Tutorials/DenEstimate_P.ipynb)
-- [x] :bar_chart: [ANN](Tutorials/ANN.ipynb)
-- [x] :snake: [PCA](Tutorials/PCA.ipynb)
+**Basic Algorithms**
+- [x] :star: [Support Vector Classifier (SVC)](Tutorials/SVC.ipynb) - ([Math Derivaton](Math_Derivation/SVC.pdf))
+- [x] :smiley: [Support Vector Regressor (SVR)](Tutorials/SVR.ipynb) - ([Math Derivaton](Math_Derivation/SVR.pdf))
+- [x] :1234: [Ridge Regression](Tutorials/Ridge.ipynb) - ([Math Derivaton](Math_Derivation/Ridge_Regression.pdf))
+- [x] :mortar_board: [Nearest Mean](Tutorials/NearestMean.ipynb) - ([Math Derivaton](Math_Derivation/K-means_n_Nearest-means.pdf))
+- [x] :closed_book: [K-Means](Tutorials/KMeans.ipynb) - ([Math Derivaton](Math_Derivation/K-means_n_Nearest-means.pdf))
+- [x] :green_book: [K-Nearest Neighbors (KNN)](Tutorials/KNN.ipynb) - ([Math Derivaton](Math_Derivation/KNN.pdf))
+- [x] :eyes: [Perceptron Learning](Tutorials/Perceptron.ipynb) - ([Math Derivaton](Math_Derivation/Perceptron_Learning_n_Gradient_Descent.pdf))
+- [x] :camera: [MSE techniques (classification&Regression)](Tutorials/MSE.ipynb) - ([Math Derivaton](Math_Derivation/MSE_techniques.pdf))
+- [x] :mahjong: [Density Estimation (Non-parametric)](Tutorials/DenEstimate_NP.ipynb) - ([Math Derivaton](Math_Derivation/Density_Estimation.pdf))
+- [x] :busts_in_silhouette: [Density Estimation (parametric)](Tutorials/DenEstimate_P.ipynb) - ([Math Derivaton](Math_Derivation/Density_Estimation.pdf))
+- [x] :bar_chart: [ANN](Tutorials/ANN.ipynb) - ([Math Derivaton](Math_Derivation/ANN.pdf))
+- [x] :snake: [PCA](Tutorials/PCA.ipynb) - ([Math Derivaton](Math_Derivation/Feature_Reduction.pdf))
 
-**Math Derivation**
-- [x] :star: [Support Vector Classifier (SVC)](Math_Derivation/SVC.pdf)
-- [x] :smiley: [Support Vector Regressor (SVR)](Math_Derivation/SVR.pdf)
-- [x] :1234: [Ridge Regression](Math_Derivation/Ridge_Regression.pdf)
-- [x] :mortar_board: [Nearest Mean & K-Means](Math_Derivation/K-means_n_Nearest-means.pdf)
-- [x] :green_book: [K-Nearest Neighbors (KNN)](Math_Derivation/KNN.pdf)
-- [x] :eyes: [Perceptron Learning](Math_Derivation/Perceptron_Learning_n_Gradient_Descent.pdf)
-- [x] :camera: [MSE techniques (classification&Regression)](Math_Derivation/MSE_techniques.pdf)
-- [x] :mahjong: [Density Estimation](Math_Derivation/Density_Estimation.pdf)
-- [x] :bar_chart: [ANN](Math_Derivation/ANN.pdf)
-- [x] :snake: [PCA](Math_Derivation/Feature_Reduction.pdf)
+**Convolutional Neural Networks**
+Comparison of training time on Colab between multiple implementation of CNN.
+|Model / Dataset / epochs|Loops Version<br><sup>(CPU)|NumPy Version<br><sup>(CPU)|CuPy Version<br><sup>(GPU)|Loops+Numba Version<br><sup>(GPU)|
+|---  |---          |---          |---         |---
+|Baseline / Digits (1k imgs) / 20|255s|**24s**|19s|**2s**
+|||||
+
+- [ ] 💻 []()
+- [ ] 🌱 []()
+- [ ] 💬 []()
+- [ ] 🔭 []()
+- [ ] ✨ []()
 
 **ML Playground**
 - [x] :surfer: [Digit Recognizer](Tutorials/_Project_1_digit_recognizer.ipynb)
