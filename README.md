@@ -31,7 +31,7 @@ git clone https://github.com/lujiazho/MachineLearningPlayground.git
 
 Training time on Colab of multiple implementation of CNN.
 
-|Model / Dataset / epochs|Loops Version<br><sup>(CPU)|NumPy Version<br><sup>(CPU)|CuPy Version<br><sup>(GPU)|Loops+Numba Version<br><sup>(CPU)|
+|Model / Dataset / epochs|Loops<br><sup>(CPU)|NumPy<br><sup>(CPU)|CuPy<br><sup>(GPU)|Loops+Numba<br><sup>(CPU)|
 |---  |---          |---          |---         |---
 |Baseline / Digits (1k imgs) / 20|255s|**24s**|19s|**2s**
 |||||
