@@ -26,8 +26,11 @@ git clone https://github.com/lujiazho/MachineLearningPlayground.git
 - [x] :bar_chart: [ANN](Tutorials/ANN.ipynb) - ([Math Derivaton](Math_Derivation/ANN.pdf))
 - [x] :snake: [PCA](Tutorials/PCA.ipynb) - ([Math Derivaton](Math_Derivation/Feature_Reduction.pdf))
 
+
 **Convolutional Neural Networks**
+
 Comparison of training time on Colab between multiple implementation of CNN.
+
 |Model / Dataset / epochs|Loops Version<br><sup>(CPU)|NumPy Version<br><sup>(CPU)|CuPy Version<br><sup>(GPU)|Loops+Numba Version<br><sup>(GPU)|
 |---  |---          |---          |---         |---
 |Baseline / Digits (1k imgs) / 20|255s|**24s**|19s|**2s**
