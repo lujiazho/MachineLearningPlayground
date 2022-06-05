@@ -1,7 +1,7 @@
 # MachineLearningPlayground
 Implementation of basic mathematical pattern recognition/machine learning techniques for fun
 
-**Setup**
+## Setup
 - Download with pip
 ```Prompt
 pip install MLplayground
@@ -12,7 +12,7 @@ pip install MLplayground
 git clone https://github.com/lujiazho/MachineLearningPlayground.git
 ```
 
-**Basic Algorithms**
+## Basic Algorithms
 - [x] :star: [Support Vector Classifier (SVC)](Tutorials/SVC.ipynb) - ([Math Derivaton](Math_Derivation/SVC.pdf))
 - [x] :smiley: [Support Vector Regressor (SVR)](Tutorials/SVR.ipynb) - ([Math Derivaton](Math_Derivation/SVR.pdf))
 - [x] :1234: [Ridge Regression](Tutorials/Ridge.ipynb) - ([Math Derivaton](Math_Derivation/Ridge_Regression.pdf))
@@ -27,9 +27,9 @@ git clone https://github.com/lujiazho/MachineLearningPlayground.git
 - [x] :snake: [PCA](Tutorials/PCA.ipynb) - ([Math Derivaton](Math_Derivation/Feature_Reduction.pdf))
 
 
-**Convolutional Neural Networks**
+## Convolutional Neural Networks
 
-Comparison of training time on Colab between multiple implementation of CNN.
+Training time on Colab of multiple implementation of CNN.
 
 |Model / Dataset / epochs|Loops Version<br><sup>(CPU)|NumPy Version<br><sup>(CPU)|CuPy Version<br><sup>(GPU)|Loops+Numba Version<br><sup>(GPU)|
 |---  |---          |---          |---         |---
@@ -42,7 +42,7 @@ Comparison of training time on Colab between multiple implementation of CNN.
 - [ ] 🔭 []()
 - [ ] ✨ []()
 
-**ML Playground**
+## ML Playground
 - [x] :surfer: [Digit Recognizer](Tutorials/_Project_1_digit_recognizer.ipynb)
 - [x] :fireworks: [Auto Encoder](Tutorials/_Project_2_auto_encoder.ipynb)
 - [x] :pencil2: [Neural Network Language Model (NNLM)](Tutorials/_Project_3_NNLanguageModel.ipynb)
