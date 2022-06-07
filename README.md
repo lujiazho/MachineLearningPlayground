@@ -35,6 +35,8 @@ Training time on Colab of multiple implementation of CNN with parameters: epochs
 |---                     |---                           |---          |---         |---           |---          |---
 |Baseline / Digits (1k)|255|24|19|2|2|**1.5**
 |Lenet / Digits (1k)|464|72|63|4.5|**4**|**4**
+||
+|Lenet / Cifar-10 (100)||13.5|12|0.9|**0.6**|**0.7**
 
 - [ ] 💻 []()
 - [ ] 🌱 []()
