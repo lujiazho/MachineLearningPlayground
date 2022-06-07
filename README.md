@@ -29,12 +29,12 @@ git clone https://github.com/lujiazho/MachineLearningPlayground.git
 
 ## Convolutional Neural Networks
 
-Training time on Colab of multiple implementation of CNN.
+Training time on Colab of multiple implementation of CNN with parameters: epochs=20, batch=2.
 
 |Model / Dataset (imgs)|Loops<br><sup>CPU<br>(s/epoch)|NumPy<br><sup>CPU<br>(s/epoch)|CuPy<br><sup>GPU<br>(s/epoch)|Loops+Numba<br><sup>CPU<br>(s/epoch)|Img2col<br><sup>CPU<br>(s/epoch)|Img2col+Numba<br><sup>CPU<br>(s/epoch)
 |---                     |---                           |---          |---         |---           |---          |---
 |Baseline / Digits (1k)|255|24|19|2|2|**1.5**
-|||||||
+|Lenet / Digits (1k)|464|72|63|4.5|**4**|**4**
 
 - [ ] 💻 []()
 - [ ] 🌱 []()
