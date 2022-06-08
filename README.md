@@ -27,7 +27,7 @@ git clone https://github.com/lujiazho/MachineLearningPlayground.git
 - [x] :snake: [PCA](Tutorials/PCA.ipynb) - ([Math Derivaton](Math_Derivation/Feature_Reduction.pdf))
 
 
-## Convolutional Neural Networks
+## Convolutional Neural Networks (CNN)
 
 Training time on Colab of multiple implementation of CNN with parameters: epochs=20, batch=2.
 
@@ -36,17 +36,24 @@ Training time on Colab of multiple implementation of CNN with parameters: epochs
 |Baseline / Digits (1k)|255|24|19|2|2|**1.5**
 |Lenet / Digits (1k)|464|72|63|4.5|**4**|**4**
 ||
-|Lenet / Cifar-10 (100)||13.5|12|0.9|**0.6**|**0.7**
+|Lenet / Cifar-10 (100)|184.5|13.5|12|0.9|**0.6**|**0.7**
 
-- [ ] 💻 []()
-- [ ] 🌱 []()
-- [ ] 💬 []()
-- [ ] 🔭 []()
-- [ ] ✨ []()
+**Junior versions**
+- [x] 💻 [CNN 1.0](Tutorials/CNN/CNN1.0.ipynb) - No Batch No Channel
+- [x] 🌱 [CNN 2.0](Tutorials/CNN/CNN2.0.ipynb) - No Batch But Channel
+
+**Senior versions:** Include both batch & channel
+- [x] 💬 [CNN 3.0](Tutorials/CNN/CNN3.0.ipynb) - NumPy Array accelerated
+- [x] 🔭 [CNN loops](Tutorials/CNN/CNN_loops_numba.ipynb) - Loops + Numba accelerated
+- [x] ✨ [CNN img2col](Tutorials/CNN/CNN_img2col_numba.ipynb) - Img2col Function accelerated
+
+**Math Derivation**
+- My version: [CNN](Math_Derivation/CNN.pdf), [Img2col](Math_Derivation/img2col.pdf)
+- A better tutorial from [Microsoft](https://microsoft.github.io/ai-edu/)
 
 ## ML Playground
 - [x] :surfer: [Digit Recognizer](Tutorials/_Project_1_digit_recognizer.ipynb)
 - [x] :fireworks: [Auto Encoder](Tutorials/_Project_2_auto_encoder.ipynb)
-- [x] :pencil2: [Neural Network Language Model (NNLM)](Tutorials/_Project_3_NNLanguageModel.ipynb)
-- [x] :bulb: [Word2Vec (Skip-gram)](Tutorials/_Project_4_Word2Vec(Skip-gram).ipynb)
+- [x] :pencil2: [Neural Network Language Model (NNLM)](Tutorials/_Project_3_NNLanguageModel.ipynb) - ([Model Structure](Math_Derivation/NLP_NNLM.pdf))
+- [x] :bulb: [Word2Vec (Skip-gram)](Tutorials/_Project_4_Word2Vec(Skip-gram).ipynb) - ([Model Structure](Math_Derivation/NLP_word2vec_skipgram.pdf))
 - [ ] :mega: []()
