@@ -55,4 +55,4 @@ Training time on Colab of multiple implementation of CNN with parameters: epochs
 - [x] :fireworks: [Auto Encoder](Tutorials/_Project_2_auto_encoder.ipynb)
 - [x] :pencil2: [Neural Network Language Model (NNLM)](Tutorials/_Project_3_NNLanguageModel.ipynb) - ([Model Structure](Math_Derivation/NLP_NNLM.pdf))
 - [x] :bulb: [Word2Vec (Skip-gram)](Tutorials/_Project_4_Word2Vec(Skip-gram).ipynb) - ([Model Structure](Math_Derivation/NLP_word2vec_skipgram.pdf))
-- [ ] :mega: []()
+- [x] :mega: [Autograd](Tutorials/_Project_5_autograd_proto.ipynb)
