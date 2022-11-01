@@ -61,5 +61,5 @@ Training time on Colab of multiple implementation of CNN with parameters: epochs
 - Learrning rate decay can be easily added to ANN while training because of the design of optimization operation
 
 ## TODO
-- change Relu derivative to D_relu(x>=0) = 1, D_relu(x<0) = 0
+- Relu derivative to D_relu(x==0) = 1 for Adam, but D_relu(x==0) = 0 for SGD/SGD momentum
 - add cross entropy loss (multi-class case)
