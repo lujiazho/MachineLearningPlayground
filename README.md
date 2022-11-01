@@ -61,6 +61,16 @@ Training time on Colab of multiple implementation of CNN with parameters: epochs
 - Learrning rate decay can be easily added to ANN while training because of the design of optimization operation
 
 ## TODO
+
+For ANN/MLP
 - Relu derivative of D_relu(x==0) could be in [0, 1]
 - add cross entropy loss (multi-class case)
 - change default initialization from uniform(0, 1) to normal(0, 0.1)
+
+For New
+- Add GMM(EM steps)
+- Add CART(single decision tree)
+- Add logistic regression
+- Add Lasso regression
+- (Optional) General Bridge Regression
+- Add LMS for singal processing
