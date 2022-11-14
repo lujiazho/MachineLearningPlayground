@@ -68,7 +68,7 @@ For ANN/MLP
 - change default initialization from uniform(0, 1) to normal(0, 0.1)
 - (Optional) weight initialization: He or Xavier normal
 
-For MLP and CNN
+For CNN
 - (Optional) Batch normalization
 
 For decomposition
