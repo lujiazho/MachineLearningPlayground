@@ -71,6 +71,9 @@ For ANN/MLP
 For MLP and CNN
 - (Optional) Batch normalization
 
+For decomposition
+- Do X - np.mean(X, axis=0) to data before PCA transform (Align to origin, which is how sklearn did)
+
 For New
 - Add GMM(EM steps)
 - Add CART(single decision tree)
