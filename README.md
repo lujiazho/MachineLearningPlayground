@@ -81,3 +81,4 @@ For New
 - Add Lasso regression
 - (Optional) General Bridge Regression
 - Add LMS for singal processing
+- (Optional) Gaussian Process Regression
